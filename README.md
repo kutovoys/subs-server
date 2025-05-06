@@ -13,8 +13,6 @@
 - 📦 Custom HTTP headers for profile metadata.
 - 🐞 Debug mode with listing of all available endpoints.
 
----
-
 ## 🚀 Usage
 
 ### CLI
