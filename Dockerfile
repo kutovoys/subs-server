@@ -30,10 +30,6 @@ LABEL org.opencontainers.image.source=https://github.com/${USERNAME}/${REPOSITOR
 WORKDIR /app
 COPY --from=builder /usr/bin/subs-server /
 
-RUN mkdir -p /subs && chown -R nonroot:nonroot /subs
-
-VOLUME ["/subs"]
-
 USER nonroot:nonroot
 
 ENTRYPOINT ["/subs-server"]
